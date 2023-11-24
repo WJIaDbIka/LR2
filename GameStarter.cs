@@ -21,7 +21,7 @@ namespace GameStarter
 		{
 			GameCount++;
 			var rand = new Random();
-			if (rand.Next(0, 2) == 0)
+			if (rand.Next(0, 20)%2 == 0)
 			{
 				var player1Game = gameCreator.Create(gameType, Player2.UserName, true, rating, GameCount);
 				var player2Game = gameCreator.Create(gameType, Player1.UserName, false, rating, GameCount);
